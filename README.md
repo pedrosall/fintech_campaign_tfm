@@ -1,10 +1,10 @@
-# 📊 Optimización de Telemarketing Financiero mediante Modelado Predictivo
+# 📊 Optimizing Financial Telemarketing through Predictive Modeling
 
-> **Trabajo Final de Máster (TFM)** enfocada en la aplicación de análisis de datos y machine learning para optimizar el marketing directo en el sector de la Banca y Servicios Financieros (Fintech).
+> **Master's Thesis (TFM)** focused on applying data analysis and machine learning to optimize direct marketing campaigns within the Banking and Financial Services (Fintech) sector.
 
 ---
 
-## 🛠️ Tech Stack & Librerías
+## 🛠️ Tech Stack & Libraries
 
 ![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)
 ![Pandas](https://img.shields.io/badge/Pandas-v1.5-150458.svg?style=flat&logo=pandas)
@@ -14,58 +14,58 @@
 
 ---
 
-## 💼 Problema de Negocio
+## 💼 Business Problem
 
-La entidad financiera enfrenta el desafío de maximizar la conversión de depósitos a plazo fijo mediante campañas de telemarketing. El modelo actual adolece de tres ineficiencias críticas:
+The financial institution faces the challenge of maximizing fixed-term deposit conversions through telemarketing campaigns. The current approach suffers from three critical inefficiencies:
 
-*   **Baja eficiencia operativa:** Impactos repetidos al mismo cliente sin una garantía predictiva de éxito.
-*   **Volatilidad estacional:** Concentración ineficiente de actividades en meses específicos (ej. sobrecarga en mayo vs. inactividad en noviembre).
-*   **Costes elevados:** Recursos humanos y técnicos no optimizados según la propensión de compra real del cliente.
+*   **Low operational efficiency:** Repeatedly contacting the same customer without a predictive guarantee of success.
+*   **Seasonal volatility:** Inefficient concentration of outreach in specific months (e.g., over-contacting in May vs. inactivity in November).
+*   **High operational costs:** Human and technical resources are not optimized based on the customer's actual propensity to buy.
 
-**🎯 Objetivo del Proyecto:** Analizar los datos de campañas históricas para identificar, ponderar (mediante técnicas como valores SHAP) y predecir los factores determinantes que impulsan a un cliente a contratar un depósito.
+**🎯 Project Objective:** To analyze historical campaign data to identify, weight (using techniques like SHAP values), and predict the key driving factors that lead a customer to subscribe to a fixed-term deposit.
 
 ---
 
 ## 📊 Dataset
 
-*   **Origen:** Dataset privado proporcionado por el programa de Máster (no disponible públicamente por restricciones de confidencialidad).
-*   **Contenido:** Datos crudos y procesados que integran variables demográficas, del histórico de relación con el cliente y variables macroeconómicas.
+*   **Source:** Private dataset provided by the Master's program (not publicly available due to confidentiality agreements).
+*   **Content:** Raw and processed data integrating demographic features, customer relationship history, and macroeconomic variables.
 
 ---
 
-## ⚙️ Metodología Aplicada
+## ⚙️ Methodology
 
-El proyecto sigue un pipeline riguroso de Ciencia de Datos dividido en las siguientes fases:
+The project follows a rigorous Data Science pipeline structured into the following phases:
 
-1.  **Definición Estratégica:** Establecimiento de objetivos generales, tácticas de negocio y diseño del árbol de indicadores clave de rendimiento (KPIs).
-2.  **Configuración y Carga:** Preparación del entorno de producción en Python y orquestación de librerías (`Pandas`, `Seaborn`, `Plotly`, `FuzzyWuzzy`).
-3.  **Exploración de Datos (EDA):** Análisis profundo de perfiles demográficos, impacto de variables macroeconómicas (Euríbor, inflación) y determinantes operativos de las campañas.
-4.  **Limpieza e Ingeniería de Datos:** Tratamiento automatizado de valores nulos, eliminación de duplicados, gestión de *outliers* y normalización/codificación de variables categóricas.
-5.  **Análisis Avanzado de KPIs:**
-    *   *Penetración en Contexto de Tasas:* Impacto del Euríbor en la propensión de contratación.
-    *   *Elasticidad de Conversión:* Relación matemática entre las variaciones de mercado y las ventas finales.
-    *   *Tasa de Recurrencia:* Comportamiento analítico de clientes con historial de éxito previo.
-
----
-
-## 💡 Principales Hallazgos (Insights)
-
-*   **📈 Ventana de Oportunidad Macro:** Se detectó un repunte crítico de conversión en periodos con un Euríbor superior al **4.8%**, donde el producto se vuelve altamente competitivo.
-*   **👤 Perfil de Alta Conversión:** Los perfiles administrativos con educación universitaria muestran una estabilidad financiera que correlaciona positivamente con la suscripción de depósitos a largo plazo.
-*   **🛑 Fatiga del Cliente (Over-contacting):** El análisis de frecuencia de contacto identificó el límite óptimo de llamadas por campaña. Superado este umbral, la probabilidad de éxito decae drásticamente, disparando el coste operativo de forma innecesaria.
+1.  **Strategic Definition:** Establishing general business objectives, tactical approaches, and designing the KPI tree.
+2.  **Environment Setup & Loading:** Preparing the Python production environment and orchestrating libraries (`Pandas`, `Seaborn`, `Plotly`, `FuzzyWuzzy`).
+3.  **Exploratory Data Analysis (EDA):** Deep dive into demographic profiles, the impact of macroeconomic variables (Euribor, inflation), and operational campaign drivers.
+4.  **Data Cleaning & Feature Engineering:** Automated handling of missing values, duplicate removal, outlier management, and categorical variable normalization/encoding.
+5.  **Advanced KPI Analysis:**
+    *   *Rate Penetration Context:* Impact of the Euribor on subscription propensity.
+    *   *Conversion Elasticity:* Mathematical relationship between market fluctuations and final sales.
+    *   *Recurrence Rate:* Analytical behavior of customers with a history of past successful conversions.
 
 ---
 
-## 📦 Entregables del Repositorio
+## 💡 Key Insights
 
-*   📁 `notebooks/` - Jupyter Notebook con todo el código estructurado de EDA, limpieza y modelado.
-*   📁 `docs/` - Documento técnico detallado con la metodología y justificación estadística.
-*   📄 `presentacion_ejecutiva.pdf` - Presentación final orientada a la Junta Directiva de la Fintech.
+*   **📈 Macro Opportunity Window:** A critical spike in conversion was detected during periods when the Euribor exceeded **4.8%**, making the product highly competitive.
+*   **👤 High-Conversion Profile:** Administrative profiles with a university education show financial stability that correlates positively with long-term deposit subscriptions.
+*   **🛑 Customer Fatigue (Over-contacting):** The contact frequency analysis identified the optimal threshold for calls per campaign. Beyond this limit, the probability of success drops drastically, unnecessarily driving up operational costs.
 
 ---
 
-## 🚀 Cómo Ejecutar el Proyecto
+## 📦 Repository Deliverables
 
-1. Clona este repositorio en tu máquina local:
+*   📁 `notebooks/` - Jupyter Notebook containing the structured code for EDA, cleaning, and modeling.
+*   📁 `docs/` - Detailed technical documentation detailing the methodology and statistical justification.
+*   📄 `executive_presentation.pdf` - Final presentation tailored for the Fintech's Executive Board.
+
+---
+
+## 🚀 How to Run
+
+1. Clone this repository to your local machine:
 ```bash
-   git clone [https://github.com/tu-usuario/tu-repo.git](https://github.com/tu-usuario/tu-repo.git)
+   git clone [https://github.com/your-username/your-repo.git](https://github.com/your-username/your-repo.git)
